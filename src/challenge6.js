@@ -101,6 +101,9 @@ var characterSet = {
 function Encrypt(message) {
     let newMessage = [];
     for (let i = 0; i < message.length; i++) {
-        newMessage.push(characterSet[message[0]]);
+        newMessage += (characterSet[message[i]].toString());
     }
+    return console.log(newMessage);
 }
+
+//Encrypt("hello");
